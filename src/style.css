@@ -1,11 +1,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
   position: relative;
 }
 
@@ -33,21 +35,49 @@ nav ul li a {
   padding: 10px 20px; /* Adjust this for vertical positioning */
   background-color: #e9e9e9;
 }
-/* .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  align-items: flex-end;
-}
- */
 .logo {
   width: 50px;
   height: 50px;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-/* .nav-items {
+.banner {
+  height: 95vh;
   display: flex;
-  gap: 2.5em;
-} */
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.desc {
+  width: 45%;
+  padding-right: 8rem;
+  font-size: 1.125rem;
+}
+
+.desc > p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 1.5rem 0;
+}
+
+.desc > h1 {
+  white-space: nowrap;
+  font-size: 2.375em;
+  font-weight: 500;
+}
+
+.contact {
+  position: absolutef;
+  padding: 1.2rem 2.5rem;
+  color: white;
+  background-color: rgb(15, 201, 195);
+  border: none;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
