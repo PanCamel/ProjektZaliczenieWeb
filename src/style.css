@@ -190,3 +190,36 @@ h2 {
 .icon {
   font-size: 34px;
 }
+
+.imgBoxes {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  flex-wrap: wrap;
+}
+
+.imgBox {
+  width: 25%;
+  height: 40vh;
+  background-image: url("/Users/wojciechbalucki/Desktop/studia/Projekt Zaliczenie/assets/placeholderImg.svg");
+  background-size: cover;
+}
+
+.fa-eye {
+  font-size: 54px;
+}
+
+.hover-effect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.hover-effect:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
