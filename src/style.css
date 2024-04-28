@@ -17,6 +17,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Styling the navbar */
 nav ul li {
   display: inline;
@@ -45,7 +49,7 @@ nav ul li a {
 }
 
 .banner {
-  height: 95vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -56,19 +60,20 @@ nav ul li a {
 .desc {
   width: 45%;
   padding-right: 8rem;
-  font-size: 1.125rem;
 }
 
 .desc > p {
-  font-size: 1.125rem;
+  font-family: "Nunito", sans-serif;
+  color: #787878;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.75rem;
   padding: 1.5rem 0;
 }
 
 .desc > h1 {
-  white-space: nowrap;
-  font-size: 2.375em;
-  font-weight: 500;
+  font-size: 38px;
+  font-weight: 600;
 }
 
 .contact {
@@ -114,11 +119,8 @@ h2 {
 
 .skills {
   width: 100%;
-  height: 30vh;
+  height: 70vh;
   display: flex;
-  justify-content: flex-start; /* Align items to the left horizontally */
-  align-items: center;
-  flex-direction: row;
 }
 
 .progress-label {
@@ -129,10 +131,20 @@ h2 {
 }
 
 .skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding-left: 2.5em;
-  width: 40%;
+  height: 100%;
+  width: 50%;
+  background-color: #f8f9f9;
 }
-
+.skills-content--2 {
+  width: 50%;
+  height: 100%;
+  background-color: #e9e9e9;
+}
 .uxui {
   width: 75%;
 }
@@ -141,7 +153,7 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: rgb(237, 237, 237);
-  width: 100%;
+  width: 75%;
 }
 
 .progress {
@@ -207,6 +219,7 @@ h2 {
 
 .fa-eye {
   font-size: 54px;
+  color: black;
 }
 
 .hover-effect {
@@ -222,4 +235,17 @@ h2 {
 .hover-effect:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loadWork {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  font-weight: 600;
+  color: #8e8e8e;
+  font-size: 0.75rem;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
