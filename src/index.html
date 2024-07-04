@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,18 +26,16 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Process</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Work</a></li>
+            <li><a href="#work-process">Process</a></li>
+            <li><a href="#features">Services</a></li>
+            <li><a href="#quote">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
       <section class="banner">
         <div class="desc">
           <h1>We Design and Develop</h1>
@@ -44,12 +43,13 @@
             We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or
             two about designing websites and mobile apps.
           </p>
-          <a href="#" class="contact">CONTACT US</a>
+          <a href="#" class="btn">CONTACT US</a>
         </div>
       </section>
-
-      <section class="about">
-        <div class="about-text">
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="headingBox">
           <h2>About us</h2>
           <p>
             Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear
@@ -58,7 +58,24 @@
           <img src="../assets/signature.png" alt="signature" />
         </div>
       </section>
-      <section class="skills">
+      <!-- <section class="skills">
+        <div class="skills-content">
+          <h2>Professional skills</h2>
+          <div class="progress-container">
+            <label class="progress-label">UX/UI design 75%</label>
+            <div class="progress-bar uxui"></div>
+          </div>
+          <div class="progress-container">
+            <label class="progress-label">Web development 90%</label>
+            <div class="progress-bar webdev"></div>
+          </div>
+          <div class="progress-container">
+            <label class="progress-label">Marketing 65%</label>
+            <div class="progress-bar marketing"></div>
+          </div>
+        </div>
+      </section> -->
+      <section class="skills" id="skills">
         <div class="skills-content">
           <h2>Proffesional skills</h2>
           <label class="progress-label">UX/UI design 75%</label>
@@ -76,84 +93,194 @@
         </div>
         <div class="skills-content--2"></div>
       </section>
-      <section class="numbers">
-        <div class="stats">
-          <div class="stats-icon">
-            <i class="fa-solid fa-suitcase icon"></i>
-            <!--NIE BYŁO DARMOWEJ IKONKI OUTLINE TECZKI :C -->
-          </div>
-          <div class="stats-text">
+      <section class="stats" id="stats">
+        <div class="stat">
+          <i class="fa-solid fa-suitcase icon"></i>
+          <div class="stat-text">
             <p>548</p>
             <p>PROJECTS COMPLETED</p>
           </div>
-          <div class="stats-icon">
-            <i class="fa-regular fa-clock icon"></i>
-          </div>
-          <div class="stats-text">
+        </div>
+        <div class="stat">
+          <i class="fa-regular fa-clock icon"></i>
+          <div class="stat-text">
             <p>1465</p>
             <p>WORKING HOURS</p>
           </div>
-          <div class="stats-icon">
-            <i class="fa-regular fa-star icon"></i>
-          </div>
-          <div class="stats-text">
+        </div>
+        <div class="stat">
+          <i class="fa-regular fa-star icon"></i>
+          <div class="stat-text">
             <p>612</p>
             <p>POSITIVE FEEDBACKS</p>
           </div>
-          <div class="stats-icon">
-            <i class="fa-regular fa-heart icon"></i>
-          </div>
-          <div class="stats-text">
+        </div>
+        <div class="stat">
+          <i class="fa-regular fa-heart icon"></i>
+          <div class="stat-text">
             <p>735</p>
             <p>HAPPY CLIENTS</p>
           </div>
         </div>
       </section>
       <section class="imgBoxes">
-        <div class="imgBox imgBox--1">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--2">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--3">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--4">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--5">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--6">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--7">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
-        <div class="imgBox imgBox--8">
-          <div class="hover-effect">
-            <i class="fa-regular fa-eye"></i>
-          </div>
+        <div class="imgBox">
+          <div class="hover-effect"><i class="fa-regular fa-eye"></i></div>
         </div>
         <div class="loadWork">
           <p>Load more Work</p>
         </div>
       </section>
+      <section class="work-process" id="work-process">
+        <div class="headingBox">
+          <h2>Our Work Process</h2>
+          <p>
+            Was years itseasons was there from he in in them together over that, third sixth gathered female creeping
+            bearing behold years.
+          </p>
+        </div>
+        <div class="video">
+          <div class="circle">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <div class="feature-item">
+            <i class="fa-solid fa-diamond"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-gamepad"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="feature-item">
+            <i class="fa-solid fa-plane"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-regular fa-star"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-fill-drip"></i>
+            <h5>ui/ux design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolorum.</p>
+          </div>
+        </div>
+      </section>
+      <section class="quote" id="quote">
+        <div class="quoteBox">
+          <h2>
+            “ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first
+            project and am looking forward to start the next one asap.”
+          </h2>
+          <p>Michael Hopkins</p>
+        </div>
+        <div class="slider-nav">
+          <div class="slider-circle"></div>
+          <div class="slider-circle"></div>
+          <div class="slider-circle"></div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <div class="sponsorsBox">
+          <img src="../assets/ 1.png" alt="" />
+          <img src="../assets/ 2.png" alt="" />
+          <img src="../assets/  3.png" alt="" />
+          <img src="../assets/ 4.png" alt="" />
+          <img src="../assets/ 5.png" alt="" />
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="headingBox">
+          <h2>Need a Project?</h2>
+          <p>
+            Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of
+            something beautiful.
+          </p>
+        </div>
+        <div class="formBox">
+          <form action="">
+            <input type="text" name="" id="" placeholder="Your Name" />
+            <input type="" name="" id="" placeholder="Your Email" />
+            <input type="text" name="" id="" placeholder="Your Title" />
+            <input type="text" name="" id="" placeholder="Your comment" />
+          </form>
+          <button type="submit" class="btn">Send message</button>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footerBox">
+        <div class="col-1">
+          <h3>Piroll Design Inc.</h3>
+          <p>&#169; 2017 Piroll. All rights reserved. Designed by robiruk</p>
+        </div>
+        <div class="col-2">
+          <p>hello@pirolltheme.com</p>
+          <p>+44 987 065 908</p>
+        </div>
+        <div class="col-3">
+          <a href="#">Projects</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Carreer</a>
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Contact</a>
+          <a href="#">Legals</a>
+        </div>
+        <div class="col-3">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Dribble</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
