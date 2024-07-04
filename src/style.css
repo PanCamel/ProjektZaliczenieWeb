@@ -8,7 +8,6 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-
 html {
   scroll-behavior: smooth;
   transition: scroll-padding-top 0.3s ease-in-out;
@@ -487,16 +486,16 @@ footer {
   .banner {
     width: 100%;
     height: 90vh;
+    justify-content: center;
   }
   .desc {
+    width: 80%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 0;
-    font-size: 2px;
-    width: 100%;
   }
   .desc > p {
     font-family: "Nunito Sans", sans-serif;
@@ -607,5 +606,95 @@ footer {
   .col-3 {
     display: flex;
     flex-direction: row;
+  }
+}
+
+/* Podstawowa stylizacja dla burger menu */
+.burger-menu {
+  display: none; /* Ukryj burger menu na desktopie */
+}
+
+/* Stylizacja ikony burger menu */
+.burger-icon {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.burger-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.burger-icon span:nth-child(1) {
+  top: 0;
+}
+
+.burger-icon span:nth-child(2),
+.burger-icon span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-toggle {
+  display: none; /* Ukryj standardowy checkbox */
+}
+
+/* Wyświetlanie menu po kliknięciu w ikonę */
+.burger-toggle:checked + .burger-icon span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.burger-toggle:checked + .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-toggle:checked + .burger-icon span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+/* Menu mobilne */
+.burger-toggle:checked ~ .menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.menu {
+  display: none; /* Ukryj menu na starcie */
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #ffc107;
+}
+
+/* Media query dla burger menu */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* Ukryj menu desktopowe na mniejszych ekranach */
+  }
+
+  .burger-menu {
+    display: block; /* Wyświetl burger menu na mniejszych ekranach */
   }
 }
