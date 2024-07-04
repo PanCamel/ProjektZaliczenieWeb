@@ -521,6 +521,7 @@ footer {
 
   .skills-content {
     display: flex;
+    padding: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
